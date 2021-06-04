@@ -1,0 +1,54 @@
+<html>
+<head>
+    <title>Nav Menu</title>
+</head>
+<style>
+/* The styles for the operation of the navigation menu */
+#nav_menu {
+    grid-area: navi; /* If you're using grid layout, then this will place it if you use the grid-template-areas and name that part 'navi.' Otherwise, delete this. Up to you. */
+}
+#nav_menu ul {
+	list-style: none;
+	position: relative; 
+	display: grid;
+	grid-template: auto / repeat(4, 1fr); /* Edit this depending on how you want to space the buttons. */
+	align-content: center;
+}
+
+/* The styles for the formatting of the navigation menu */
+/* There are several parts in here to edit colors. I've put comments next to them to make them stand out. Of course, feel free to edit however you see fit. */
+#nav_menu ul {
+	margin: 0;
+	padding: 0;
+}
+#nav_menu ul li a {
+	text-align: center;
+	display: block;
+	padding: .7em 0;
+	text-decoration: none;
+	background-color: #FFFFFF; /* Edit this color */
+	color: #000000; /* Edit this colorr */
+}
+#nav_menu ul li a:hover, a:focus {
+    color: #999999; /* Edit this */
+}
+/* This styles the 'current' class, which I mention below. */
+#nav_menu ul li a.current {
+	color: #999999 !important; /* Edit this */ 
+}
+</style>
+
+
+<body>
+    <!-- The navigation menu list. -->
+    <nav id="nav_menu"> <!-- You probably only need this ID if using the grid-area up above. If not, either find another use for it or delete it. Up to you. -->
+    	<ul>
+            <!-- Move the 'current' class to whichever page this is. It will make that button stand out to show the user which page they're on. -->
+    		<li><a class="current" href="#">Home</a></li>
+    		<li><a href="#">Menu</a></li>
+            <li><a href="#">Locations</a></li>
+    		<li><a href="#">Contact</a></li>
+    	</ul>
+    </nav>
+</body>
+</html>
