@@ -1,0 +1,49 @@
+/* body {
+	width: 90%;
+	margin: 0 auto;
+}
+h2 {
+	font-size: 3em;
+	margin-bottom: .3em;
+} */
+.description {
+	text-align: center;
+	font-style: italic;
+}
+/* Styles the container for all of an item's sizes */
+.itemSizes {
+	display: grid;
+	grid-template: auto / 1fr 1fr 1fr 1fr;
+	border: 1px solid black;
+	margin-bottom: 2em;
+}
+/* Styles each individual size of an item */
+.itemSizes div {
+	display: grid;
+	grid-template: 200px 1fr 1fr 1fr / auto;
+	align-items: center;
+	justify-items: center;
+}
+input[type="checkbox"] {
+    display: none;
+}
+input[type="number"] {
+    display: none;
+	width: 40px;
+}
+:checked + label {
+    font-weight: bold;
+ }
+/* The classes that control the image size */
+.Personal {
+	width: 100px;
+}
+.Medium {
+	width: 125px;
+}
+.Large {
+	width: 150px;
+}
+.Family {
+	width: 175px;
+}
