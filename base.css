@@ -5,7 +5,7 @@
 	Team Name: Developer Dudes
 	Authors: Adam Rodriguez, Tracy Harvey, James Coolidge
 
-	This file contains all the global naviagtion anf footer styles
+	This file contains all the global naviagtion and footer styles
 */
 
 /* animation when pages loads */
@@ -16,6 +16,7 @@
 
 /* body reset and font */
 body {
+	position: relative;
 	margin: 0;
 	padding: 0;
 	font-family: Verdana, Tahoma, sans-serif;
@@ -108,7 +109,7 @@ body {
 	right: 0%;
 	height: 7px;
 	width: 10%;
-	background-color: rgba(0, 0, 0, 0.2);
+	background-color: rgba(0, 0, 0, 0.3);
 	z-index: 0;
 }
 
@@ -161,4 +162,61 @@ footer {
 
 #footer li:last-of-type:hover img, #footer li:last-of-type:active img {
 	filter: drop-shadow(#2c2957 0px 0px 3px);
+}
+
+/* loading symbol */
+#loading {
+	position: fixed;
+	top: 90px;
+	background-color: rgb(206, 206, 206);
+	width: 100%;
+	box-sizing: border-box;
+	height: 100%;
+	padding-bottom: 5%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* loading circles */
+#loading div {
+	box-shadow: #555555 0px 0px 3px;
+	margin: 5px;
+	height: 40px;
+	width: 40px;
+	border-radius: 100%;
+}
+
+#loading div:first-of-type {
+	animation: firstDiv 2s infinite;
+	background-color: rgba(210, 30, 30, 0.8);
+}
+
+#loading div:nth-of-type(2) {
+	animation: secondDiv 2s 0.5s infinite;
+	background-color: rgba(172, 27, 27, 0.8);
+}
+
+#loading div:last-of-type {
+	animation: thirdDiv 2s 1s infinite;
+	background-color: rgba(110, 17, 17, 0.8);
+}
+
+/* animations for each circle */
+@keyframes  firstDiv {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.2);}
+	100% {transform: scale(1);}
+}
+
+@keyframes  secondDiv {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.2);}
+	100% {transform: scale(1);}
+}
+
+@keyframes  thirdDiv {
+	0% {transform: scale(1);}
+	50% {transform: scale(1.2);}
+	100% {transform: scale(1);}
 }

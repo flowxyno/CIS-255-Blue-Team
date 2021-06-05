@@ -22,6 +22,8 @@
 */
 
 window.onload = function() {
+    // remove loading page element
+    document.getElementById("loading").style.display = "none";
     // get all the a tags in nav bar
     var nav_menu = document.querySelectorAll("#nav_menu ul li a");
     // get the nav bar
