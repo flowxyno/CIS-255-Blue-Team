@@ -84,16 +84,16 @@ for(var i in menu.sections) {
 	}
 }
 
+// Command to output the menu
+document.getElementById("menu").innerHTML = output;
 
-window.onload = function() {
-	// get all the input that are type "checkbox" 
-	var inputs = document.querySelectorAll("input[type='checkbox']");
-	// loop through the inputs
-	for (var i = 0; i < inputs.length; i++) {
-		// access each of the inputs' name attribute.
-		// call function 'showQuantity()' every time the input value changes.
-		document.forms.menu.elements[inputs[i].getAttribute("name")].onchange = showQuantity;
-	}
+// get all the input that are type "checkbox" 
+var inputs = document.querySelectorAll("input[type='checkbox']");
+// loop through the inputs
+for (var i = 0; i < inputs.length; i++) {
+	// access each of the inputs' name attribute.
+	// call function 'showQuantity()' every time the input value changes.
+	document.forms.menu.elements[inputs[i].getAttribute("name")].onchange = showQuantity;
 }
 	
 function showQuantity() {

@@ -7,7 +7,7 @@
     <link href="base.css" rel="stylesheet" />
 	<link href="menu.css" rel="stylesheet" />
     <script src="base.js"></script>
-	<script src="menu.js"></script>
+	<script src="menu.js" defer></script>
     <!-- 
         CIS 155 Team Project - Spring 2021
         
@@ -17,14 +17,14 @@
     -->
 </head>
 <!-- remove the inline style!! It just here to show how the page would look. (remove this comment before publishing)-->
-<body style="background-image: url(site_images/home_page.jpg);">
+<body>
     <!-- The navigation menu list. -->
     <nav id="nav_menu">
     	<ul>
             <!-- Move the 'current' class to whichever page this is. It will make that button stand out to show the user which page they're on. (remove this comment before publishing) -->
             <li><a href="#"><img src="site_images/logo.jpg" alt="American Pizza"/></a></li>
-    		<li><a id="current" href="#">Home</a></li>
-    		<li><a href="#">Menu</a></li>
+    		<li><a href="#">Home</a></li>
+    		<li><a id="current" href="#">Menu</a></li>
             <li><a href="#">Locations</a></li>
     		<li><a href="#">Contact</a></li>
     	</ul>
@@ -37,10 +37,6 @@
 		<form id="menu" name="menu">
 		<!-- The output from 'menu.js' will go here -->
 		</form>
-		<script>
-			// Command to output the menu
-			document.getElementById("menu").innerHTML = output;
-		</script>
 	</main>
     <footer>
         <ul id="footer">
