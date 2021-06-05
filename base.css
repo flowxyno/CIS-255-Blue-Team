@@ -25,6 +25,7 @@ body {
 /* The styles for the operation of the navigation menu */
 #nav_menu {
 	position: relative; 
+	box-shadow: #333333 0px 0px 4px;
 }
 
 #nav_menu ul {
