@@ -1,0 +1,28 @@
+/*
+	CIS 155 Team Project - Spring 2021
+	
+	Site Name: American Pizza
+	Team Name: Developer Dudes
+	Authors: Adam Rodriguez, Tracy Harvey, James Coolidge
+
+	This file contains all contact page specific styles
+*/
+
+#head {
+    background-image: url(site_images/contact_page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 470px;
+}
+
+#title {
+    border: 2px solid black;
+    border-radius: 100px;
+    width: 12%;
+    text-align: center;
+    font-size: 50px;
+    background-color: white;
+    margin-left: 50%;
+    margin-top: 7%;
+}
