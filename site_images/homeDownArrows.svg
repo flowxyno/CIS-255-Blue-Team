@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="55.442" height="44.531" viewBox="0 0 55.442 44.531">
+  <defs>
+    <filter id="Icon_material-keyboard-arrow-up" x="0" y="0" width="55.442" height="31.265" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Icon_material-keyboard-arrow-up-2" x="0" y="13.265" width="55.442" height="31.265" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.329"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_31" data-name="Group 31" transform="translate(-1637.779 -481.278)">
+    <g transform="matrix(1, 0, 0, 1, 1637.78, 481.28)" filter="url(#Icon_material-keyboard-arrow-up)">
+      <path id="Icon_material-keyboard-arrow-up-3" data-name="Icon material-keyboard-arrow-up" d="M10.421,25.265l17.3-10.459L45.08,25.265l1.363-1.783L27.721,12,9,23.482Z" transform="translate(55.44 31.27) rotate(180)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 1637.78, 481.28)" filter="url(#Icon_material-keyboard-arrow-up-2)">
+      <path id="Icon_material-keyboard-arrow-up-4" data-name="Icon material-keyboard-arrow-up" d="M10.421,25.265l17.3-10.459L45.08,25.265l1.363-1.783L27.721,12,9,23.482Z" transform="translate(55.44 44.53) rotate(180)"/>
+    </g>
+  </g>
+</svg>

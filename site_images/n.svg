@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70.846" height="91.112" viewBox="0 0 83.846 91.112">
+  <defs>
+    <filter id="Path_17" x="0" y="9" width="75.231" height="82.112" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_17-2" x="8.615" y="9" width="75.231" height="82.112" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-2"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_17-3" x="4.615" y="0" width="75.231" height="82.112" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-3"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_17-4" x="0" y="4" width="75.231" height="82.112" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-4"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_17-5" x="4.615" y="9" width="75.231" height="82.112" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-5"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_24" data-name="Group 24" transform="translate(-722.659 -481.303)">
+    <g transform="matrix(1, 0, 0, 1, 722.66, 481.3)" filter="url(#Path_17)">
+      <path id="Path_17-6" data-name="Path 17" d="M1.191,1.705C2.94-1.217,10.182.315,11.244,1.2s1.043,3.541,1.635,3.56S16.24,0,25.194,1.2,42.7,7.351,45.457,12.221s5.169,38.2,3.372,41.426-8.568,3.3-10.7-1.8S36.725,21.8,32.867,16.8s-16.773-5.078-19.989,0,2.01,34.387,0,37.908-10.268,2.618-11.687,0S-.557,4.627,1.191,1.705Z" transform="matrix(1, -0.09, 0.09, 1, 10.5, 23.81)" fill="#ffa2a2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 722.66, 481.3)" filter="url(#Path_17-2)">
+      <path id="Path_17-7" data-name="Path 17" d="M1.191,1.705C2.94-1.217,10.182.315,11.244,1.2s1.043,3.541,1.635,3.56S16.24,0,25.194,1.2,42.7,7.351,45.457,12.221s5.169,38.2,3.372,41.426-8.568,3.3-10.7-1.8S36.725,21.8,32.867,16.8s-16.773-5.078-19.989,0,2.01,34.387,0,37.908-10.268,2.618-11.687,0S-.557,4.627,1.191,1.705Z" transform="matrix(1, -0.09, 0.09, 1, 19.11, 23.81)" fill="#ffa2a2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 722.66, 481.3)" filter="url(#Path_17-3)">
+      <path id="Path_17-8" data-name="Path 17" d="M1.191,1.705C2.94-1.217,10.182.315,11.244,1.2s1.043,3.541,1.635,3.56S16.24,0,25.194,1.2,42.7,7.351,45.457,12.221s5.169,38.2,3.372,41.426-8.568,3.3-10.7-1.8S36.725,21.8,32.867,16.8s-16.773-5.078-19.989,0,2.01,34.387,0,37.908-10.268,2.618-11.687,0S-.557,4.627,1.191,1.705Z" transform="matrix(1, -0.09, 0.09, 1, 15.11, 14.81)" fill="#ffa2a2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 722.66, 481.3)" filter="url(#Path_17-4)">
+      <path id="Path_17-9" data-name="Path 17" d="M1.191,1.705C2.94-1.217,10.182.315,11.244,1.2s1.043,3.541,1.635,3.56S16.24,0,25.194,1.2,42.7,7.351,45.457,12.221s5.169,38.2,3.372,41.426-8.568,3.3-10.7-1.8S36.725,21.8,32.867,16.8s-16.773-5.078-19.989,0,2.01,34.387,0,37.908-10.268,2.618-11.687,0S-.557,4.627,1.191,1.705Z" transform="matrix(1, -0.09, 0.09, 1, 10.5, 18.81)" fill="#ffa2a2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 722.66, 481.3)" filter="url(#Path_17-5)">
+      <path id="Path_17-10" data-name="Path 17" d="M1.191,1.705C2.94-1.217,10.182.315,11.244,1.2s1.043,3.541,1.635,3.56S16.24,0,25.194,1.2,42.7,7.351,45.457,12.221s5.169,38.2,3.372,41.426-8.568,3.3-10.7-1.8S36.725,21.8,32.867,16.8s-16.773-5.078-19.989,0,2.01,34.387,0,37.908-10.268,2.618-11.687,0S-.557,4.627,1.191,1.705Z" transform="matrix(1, -0.09, 0.09, 1, 15.11, 23.81)" fill="#650000"/>
+    </g>
+  </g>
+</svg>

@@ -110,6 +110,61 @@ window.onload = function() {
         // run interval every millisecond 
         moveLine = setInterval(move, 1);
     }
+
+    var nav_menu_ul = document.querySelector("#nav_menu ul");
+    var navImageLogo = document.getElementById("logo");
+    nav.style.position = "fixed";
+    nav.style.top = "0px";
+    nav.style.left = "0px";
+    nav.style.width = "100%";
+    var thisColor = true;
+    document.onscroll = function() {
+        var scrollHeight = window.pageYOffset;
+        if (scrollHeight >= 300 && thisColor) {
+            changeBackground("neg"); 
+            thisColor = false;
+        } else if (scrollHeight <= 200 && !(thisColor)) {
+            changeBackground("pos");
+            thisColor = true;
+        }
+    }
+
+    var backgroundInterval;
+    function changeBackground(fade) {
+        clearInterval(backgroundInterval);
+        if (fade === "neg") {
+            var navHeight = 90;
+            var bgOpacity = 100;
+            var i = -1;
+        } else {
+            var navHeight = 1;
+            var bgOpacity = 0;
+            var i = 1;
+            nav.style.display = "";
+        }
+        
+        function navBackground() {
+            if (navHeight < 40 && i === 1) {
+                bgOpacity += 0;
+            } else {
+               bgOpacity += i*2; 
+            }
+            navHeight += i;
+            nav.style.opacity = bgOpacity / 100;
+            nav.style.height = navHeight + "px";
+            navImageLogo.style.height = navHeight + "px";
+            navImageLogo.style.height = navHeight + "px";
+            navImageLogo.style.marginRight = 2700 / navHeight + "%";
+            navImageLogo.style.padding = navHeight / 18 + "px";
+            if (navHeight === 90) {
+                clearInterval(backgroundInterval);
+            } else if (navHeight === 1) {
+                navHeight.style.display = "none";
+                clearInterval(backgroundInterval);
+            }
+        }
+        backgroundInterval = setInterval(navBackground, 1);
+    }
 }
 
 function currentLocation(nav_list, position) {
