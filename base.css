@@ -124,6 +124,14 @@ body {
 	z-index: 0;
 }
 
+/* animation for American Pizza images */
+@keyframes moveUpAndDown {
+	0% {transform: translateY(0px);}
+	50% {transform: translateY(25px);}
+	100% {transform: translateY(0px);} 
+}
+
+
 /* page footer */
 footer {
 	width: 100%;

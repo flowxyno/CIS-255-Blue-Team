@@ -47,7 +47,7 @@ section {
 
 section h2 {
     position: relative;
-    top: 14%;
+    top: 4%;
     font-weight: normal;
     font-family: Arial;
     font-size: 1.9em;
@@ -57,7 +57,8 @@ section h2 {
 
 section:last-of-type > img {
     position: relative;
-    top: 16%;
+    transform: scale(1.4);
+    top: 9%;
 }
 
 section > section:first-of-type {
@@ -99,7 +100,7 @@ section:first-of-type >  img:nth-last-of-type(3) {top: 40px; left: 78%;}
 section:first-of-type >  img:nth-last-of-type(2) {top: 40px; left: 84.5%;}
 section:first-of-type > img:nth-last-of-type(1) {top: 40px; left: 91%;}
 
-img[src$="s.svg"] {
+img[src$="/s.svg"] {
     animation: sLetter 1s 1s;
 }
 
@@ -132,10 +133,10 @@ section > section:last-of-type:hover img {
 }
 
 @keyframes move {
-    0% {top: 16%}
-    33% {top: 14%}
-    67% {top: 18%}
-    100% {top: 16%}
+    0% {top: 9%}
+    33% {top: 7%}
+    67% {top: 12%}
+    100% {top: 9%}
 }
 
 section > section div {
@@ -158,12 +159,6 @@ section div > div > div {
     position: relative;
     width: 160px;
     height: 160px;
-}
-
-@keyframes turnArrow {
-    0% {transform: rotate(0deg);}
-    50% {transform: rotate(10deg);}
-    100% {transform: rotate(0deg);}
 }
 
 section div > div > div > div {
