@@ -121,6 +121,8 @@
         $total = $subtotal + $tax;
         $total = number_format($total, 2); // Forces the total to have two decimal places
         ?>
+
+        <!-- Creates the subtotal, tax, and total rows. The rows have small PHP echo statements to insert the prices. -->
             <tr class="sub-row">
                 <td></td>
                 <td class="right">Subtotal</td>
