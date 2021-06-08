@@ -46,10 +46,11 @@
         $total = 0.0;
         $addedPrc = 0.0;
 
-        // Function to take the price and quantity of a given item, multiply them, and add the amount to the subtotal. It also multiplies them to show the price for the item times the quantity.
+        // Function to take the price and quantity of a given item, multiply them, and add the amount to the subtotal. It also multiplies them to show the price for the item times the quantity. It also uses number_format() to force the added price to have two decimal places.
         function addPrices($price, $qty, &$subtotal, &$addedPrc) {
             $subtotal += $price * $qty;
             $addedPrc = $price * $qty;
+            $addedPrc = number_format($addedPrc, 2);
         };
 
         // Function to write a row of the table depending on if an item was selected
