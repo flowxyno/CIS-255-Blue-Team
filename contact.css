@@ -23,6 +23,52 @@
     text-align: center;
     font-size: 50px;
     background-color: white;
-    margin-left: 50%;
+    margin-left: 40%;
     margin-top: 7%;
+}
+
+.headers {
+    font-size: 29px;
+}
+
+#hqinfo {
+    float: left;
+    margin-top: 1%;
+    margin-left: 22%;
+    width: 25%;
+}
+
+#cform {
+    text-align: center;
+    margin-left: 32%;
+    width: 29%;
+}
+
+#cname {
+    margin-bottom: 4%;
+    border: 1px solid #707070;
+    border-radius: 48px;
+    height: 48px;
+}
+
+#cemail {
+    margin-bottom: 4%;
+    border: 1px solid #707070;
+    border-radius: 48px;
+    height: 48px;
+}
+
+#comm {
+    margin-bottom: 3%;
+    border-radius: 5px;
+}
+
+#csubmit {
+    margin-bottom: 4%;
+    border: 1px solid #707070;
+    border-radius: 18px;
+    height: 30px;
+    width: 80px;
+    background-color: #F5AEAE;
+
 }
