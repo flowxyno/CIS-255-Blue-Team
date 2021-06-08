@@ -114,6 +114,7 @@
         }
 
         // Calculate the amounts
+        $subtotal = number_format($subtotal, 2); // Forces the subtotal to have two decimal places
         $tax = $subtotal * 0.086;
         $tax = number_format($tax, 2); // Forces the tax to have two decimal places
         $total = $subtotal + $tax;
