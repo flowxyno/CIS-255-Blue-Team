@@ -118,10 +118,10 @@ window.onload = function() {
     var thisColor = true;
     document.onscroll = function() {
         var scrollHeight = window.pageYOffset;
-        if (scrollHeight >= 250 && thisColor) {
+        if (scrollHeight >= 200 && thisColor) {
             changeBackground("neg"); 
             thisColor = false;
-        } else if (scrollHeight <= 250 && !(thisColor)) {
+        } else if (scrollHeight <= 200 && !(thisColor)) {
             changeBackground("pos");
             thisColor = true;
         }
@@ -141,7 +141,7 @@ window.onload = function() {
         function navBackground() {
             navHeight += i;
             nav.style.top = navHeight + "px";
-            if (navHeight === 0 || navHeight === 90) {
+            if (navHeight === 0 || navHeight === -90) {
                 clearInterval(backgroundInterval);
             } 
         }
