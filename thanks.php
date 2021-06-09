@@ -23,10 +23,10 @@
     	<ul>
             <!-- Move the 'current' class to whichever page this is. It will make that button stand out to show the user which page they're on. (remove this comment before publishing) -->
             <li><a href="#"><img src="site_images/logo.jpg" alt="American Pizza"/></a></li>
-    		<li><a href="#">Home</a></li>
-    		<li><a href="#">Menu</a></li>
+    		<li><a href="home.html">Home</a></li>
+    		<li><a href="menu.htm">Menu</a></li>
             <li><a href="#">Locations</a></li>
-    		<li><a href="#">Contact</a></li>
+    		<li><a href="contact.htm">Contact</a></li>
     	</ul>
         <!-- lines under links -->
         <div id="line_under_link1"></div>
