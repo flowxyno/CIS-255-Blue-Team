@@ -110,6 +110,43 @@ window.onload = function() {
         // run interval every millisecond 
         moveLine = setInterval(move, 1);
     }
+
+    nav.style.position = "fixed";
+    nav.style.top = "0px";
+    nav.style.left = "0px";
+    nav.style.width = "100%";
+    var thisColor = true;
+    document.onscroll = function() {
+        var scrollHeight = window.pageYOffset;
+        if (scrollHeight >= 250 && thisColor) {
+            changeBackground("neg"); 
+            thisColor = false;
+        } else if (scrollHeight <= 250 && !(thisColor)) {
+            changeBackground("pos");
+            thisColor = true;
+        }
+    }
+
+    var backgroundInterval;
+    function changeBackground(fade) {
+        clearInterval(backgroundInterval);
+        if (fade === "neg") {
+            var navHeight = 0;
+            var i = -2;
+        } else {
+            var navHeight = -90;
+            var i = 2;
+        }
+        
+        function navBackground() {
+            navHeight += i;
+            nav.style.top = navHeight + "px";
+            if (navHeight === 0 || navHeight === 90) {
+                clearInterval(backgroundInterval);
+            } 
+        }
+        backgroundInterval = setInterval(navBackground, 1);
+    }
 }
 
 function currentLocation(nav_list, position) {

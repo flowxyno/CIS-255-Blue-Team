@@ -1,28 +1,48 @@
-/* body {
-	width: 90%;
+main {
 	margin: 0 auto;
+	width: 90%;
+	max-width: 1200px;
 }
-h2 {
-	font-size: 3em;
-	margin-bottom: .3em;
-} */
+main h2 {
+	font-size: 1.3em;
+	font-weight: none;
+}
 .description {
 	text-align: center;
 	font-style: italic;
+}
+input[type="submit"] {
+	width: 100%;
+	margin: 2em 0;
+	padding: 1em;
+	font-size: 1.2em;
+	font-family: Verdana, Tahoma, sans-serif;
+	font-style: italic;
+	border-radius: 2em;
+	border: 1px solid grey;
+	background-color: white;
 }
 /* Styles the container for all of an item's sizes */
 .itemSizes {
 	display: grid;
 	grid-template: auto / 1fr 1fr 1fr 1fr;
-	border: 1px solid black;
 	margin-bottom: 2em;
+	border-bottom: 1px solid grey;
 }
 /* Styles each individual size of an item */
 .itemSizes div {
 	display: grid;
-	grid-template: 200px 1fr 1fr 1fr / auto;
+	grid-template: 250px 1fr 1fr 1fr / auto;
 	align-items: center;
 	justify-items: center;
+	margin-bottom: 1em;
+}
+.itemSizes div img {
+	align-self: end;
+	margin-bottom: 1.5em;
+}
+.itemSizes div p {
+	margin: .7em 0 0;
 }
 input[type="checkbox"] {
     display: none;
@@ -31,19 +51,25 @@ input[type="number"] {
     display: none;
 	width: 40px;
 }
+label {
+	border: 1px solid grey;
+	padding: 1em 5em;
+	border-radius: 2em;
+}
 :checked + label {
-    font-weight: bold;
+	background-color: #ac5959;
+    color: white;
  }
 /* The classes that control the image size */
 .Personal {
-	width: 100px;
+	width: 80px;
 }
 .Medium {
-	width: 125px;
+	width: 120px;
 }
 .Large {
-	width: 150px;
+	width: 160px;
 }
 .Family {
-	width: 175px;
+	width: 240px;
 }

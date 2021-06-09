@@ -1,0 +1,191 @@
+/*
+	CIS 155 Team Project - Spring 2021
+	
+	Site Name: American Pizza
+	Team Name: Developer Dudes
+	Authors: Adam Rodriguez, Tracy Harvey, James Coolidge
+
+	This file contains styles for the home page
+*/
+
+html, body, div, section, h1, img, h1, h2, h3, p, span,
+ul, li, nav, footer {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(site_images/home_page.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    display: grid;
+    grid-template: auto / 3fr 1fr;
+}
+
+@media (max-height: 900px) {
+    body > section {
+        height: 750px;
+    }
+}
+
+@media (max-height: 1081px) {
+    body > section {
+        height: 980px;
+    }
+}
+
+@media (max-height: 1400px) {
+    body > section {
+        height: 1200px;
+    }
+}
+
+section h2 {
+    position: relative;
+    top: 4%;
+    font-weight: normal;
+    font-family: Arial;
+    font-size: 1.9em;
+    font-style: italic;
+    text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
+}
+
+section:last-of-type > img {
+    position: relative;
+    transform: scale(1.4);
+    top: 9%;
+}
+
+section > section:first-of-type {
+    position: relative;
+    width: 1100px;
+    margin: 20% auto;
+    animation: siteName 1s;
+}
+
+@keyframes siteName {
+    0% {width: 0px;}
+    90% {width: 1200px;}
+    100% {width: 1100px;}
+}
+
+@keyframes sLetter {
+    0% {transform: scale(1);}
+    50% {transform: scale(1.5);}
+    100% {transform: scale(1);}
+}
+
+section:first-of-type > img {
+    filter: drop-shadow(#242424 0px 0px 3px);
+    position: absolute;
+}
+
+section:first-of-type > img:nth-last-of-type(14) {left: 0%;}
+section:first-of-type > img:nth-last-of-type(13) {top: 40px; left: 11.5%;}
+section:first-of-type >  img:nth-last-of-type(12) {top: 40px; left: 20%;}
+section:first-of-type >  img:nth-last-of-type(11) {top: 40px; left: 26.5%;}
+section:first-of-type >  img:nth-last-of-type(10) {top: 40px; left: 31%;}
+section:first-of-type >  img:nth-last-of-type(9) {top: 40px; left: 34.5%;}
+section:first-of-type >  img:nth-last-of-type(8) {top: 40px; left: 40%;}
+section:first-of-type >  img:nth-last-of-type(7) {top: 40px; left: 46%;}
+section:first-of-type >  img:nth-last-of-type(6) {left: 58%;}
+section:first-of-type >  img:nth-last-of-type(5) {top: 40px; left: 67%;}
+section:first-of-type >  img:nth-last-of-type(4) {top: 40px; left: 71%;}
+section:first-of-type >  img:nth-last-of-type(3) {top: 40px; left: 78%;}
+section:first-of-type >  img:nth-last-of-type(2) {top: 40px; left: 84.5%;}
+section:first-of-type > img:nth-last-of-type(1) {top: 40px; left: 91%;}
+
+img[src$="/s.svg"] {
+    animation: sLetter 1s 1s;
+}
+
+@media  screen and (max-width: 1600px) {
+    section > section:first-of-type {
+        width: 900px;
+        animation: siteName 1s;
+    }
+    
+    @keyframes siteName {
+        0% {width: 0px;}
+        90% {width: 1000px;}
+        100% {width: 900px;}
+    }
+
+    section {
+        margin-right: 2%;
+    }
+}
+
+section > section:last-of-type {
+    display: flex;
+    margin-top: 55%;
+    flex-direction: column;
+    align-items: center;
+}
+
+section > section:last-of-type:hover img {
+    animation: move 1s;
+}
+
+@keyframes move {
+    0% {top: 9%}
+    33% {top: 7%}
+    67% {top: 12%}
+    100% {top: 9%}
+}
+
+section > section div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    background-color: rgba(197, 21, 45, 0.39);
+    border-radius: 100%;
+    border: 1px solid transparent;
+}
+
+section div > div {
+    width: 280px;
+    height: 280px;
+}
+
+section div > div > div {
+    position: relative;
+    width: 160px;
+    height: 160px;
+}
+
+section div > div > div > div {
+    position: relative;
+    left: 15%;
+    width: 30%;
+    height: 5px;
+    border-radius: 2px;
+    background-color: #EEEEEE;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 4px;
+}
+
+section div > div > div > div:last-of-type {
+    position: relative;
+    left: -15.5%;
+    transform: rotate(90deg);
+}
+
+section > section div:hover {
+    background-color: rgba(197, 21, 45, 0.45);
+    border: 1px solid rgba(189, 189, 255, 0.5);   
+}
+
+section div > div > div:hover div {
+    background-color: #ffffff;
+}
+
+section div > div > div:focus {
+    border-width: 3px;
+}

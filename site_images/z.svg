@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70.583" height="89.867" viewBox="0 0 87.583 89.867">
+  <defs>
+    <filter id="Path_20" x="0" y="9" width="78.968" height="80.867" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_20-2" x="8.615" y="9" width="78.968" height="80.867" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-2"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_20-3" x="4.615" y="0" width="78.968" height="80.867" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-3"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_20-4" x="0" y="4" width="78.968" height="80.867" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-4"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path_20-5" x="4.615" y="9" width="78.968" height="80.867" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3.5" result="blur-5"/>
+      <feFlood flood-opacity="0.49"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_27" data-name="Group 27" transform="translate(-934.163 -481.799)">
+    <g transform="matrix(1, 0, 0, 1, 934.16, 481.8)" filter="url(#Path_20)">
+      <path id="Path_20-6" data-name="Path 20" d="M27.84,14.088c-.736-3.81-22.554,1.515-25.376,0s-3.928-8.265.57-10.261,36.848-8.222,42.121,1.4-22.1,33.945-21.029,37.081,23.005-.564,25.51.713,5.748,8.761,2,10.078S9.248,58.088,5.171,52.139,28.576,17.9,27.84,14.088Z" transform="matrix(1, -0.09, 0.09, 1, 10.5, 24.15)" fill="#ffa2a2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 934.16, 481.8)" filter="url(#Path_20-2)">
+      <path id="Path_20-7" data-name="Path 20" d="M27.84,14.088c-.736-3.81-22.554,1.515-25.376,0s-3.928-8.265.57-10.261,36.848-8.222,42.121,1.4-22.1,33.945-21.029,37.081,23.005-.564,25.51.713,5.748,8.761,2,10.078S9.248,58.088,5.171,52.139,28.576,17.9,27.84,14.088Z" transform="matrix(1, -0.09, 0.09, 1, 19.11, 24.15)" fill="#ffa2a2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 934.16, 481.8)" filter="url(#Path_20-3)">
+      <path id="Path_20-8" data-name="Path 20" d="M27.84,14.088c-.736-3.81-22.554,1.515-25.376,0s-3.928-8.265.57-10.261,36.848-8.222,42.121,1.4-22.1,33.945-21.029,37.081,23.005-.564,25.51.713,5.748,8.761,2,10.078S9.248,58.088,5.171,52.139,28.576,17.9,27.84,14.088Z" transform="matrix(1, -0.09, 0.09, 1, 15.11, 15.15)" fill="#ffa2a2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 934.16, 481.8)" filter="url(#Path_20-4)">
+      <path id="Path_20-9" data-name="Path 20" d="M27.84,14.088c-.736-3.81-22.554,1.515-25.376,0s-3.928-8.265.57-10.261,36.848-8.222,42.121,1.4-22.1,33.945-21.029,37.081,23.005-.564,25.51.713,5.748,8.761,2,10.078S9.248,58.088,5.171,52.139,28.576,17.9,27.84,14.088Z" transform="matrix(1, -0.09, 0.09, 1, 10.5, 19.15)" fill="#ffa2a2"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 934.16, 481.8)" filter="url(#Path_20-5)">
+      <path id="Path_20-10" data-name="Path 20" d="M27.84,14.088c-.736-3.81-22.554,1.515-25.376,0s-3.928-8.265.57-10.261,36.848-8.222,42.121,1.4-22.1,33.945-21.029,37.081,23.005-.564,25.51.713,5.748,8.761,2,10.078S9.248,58.088,5.171,52.139,28.576,17.9,27.84,14.088Z" transform="matrix(1, -0.09, 0.09, 1, 15.11, 24.15)" fill="#650000"/>
+    </g>
+  </g>
+</svg>

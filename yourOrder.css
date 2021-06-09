@@ -1,0 +1,29 @@
+main {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1000px;
+}
+table {
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 1em;
+}
+table th {
+    text-align: left;
+    border-bottom: 1px solid grey;
+}
+tr:nth-child(1) {
+    width: 55%;
+}
+td:nth-child(3) {
+    text-align: right;
+}
+.right {
+    text-align: right;
+}
+.sub-row td {
+    border-top: 1px solid grey;
+}
+.total-row td {
+    font-weight: bold;
+}
