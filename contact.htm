@@ -7,6 +7,7 @@
     <link href="base.css" rel="stylesheet" />
     <link href="contact.css" rel="stylesheet" />
     <script src="base.js"></script>
+    <script src="contact.js" defer></script>
     <!-- 
         CIS 155 Team Project - Spring 2021
         
@@ -23,10 +24,10 @@
             <ul>
                 <!-- Move the 'current' class to whichever page this is. It will make that button stand out to show the user which page they're on. (remove this comment before publishing) -->
                 <li><a href="#"><img id="logo" src="site_images/logo.jpg" alt="American Pizza"/></a></li>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Menu</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="menu.htm">Menu</a></li>
                 <li><a href="#">Locations</a></li>
-                <li><a id="current" href="#">Contact</a></li>
+                <li><a id="current" href="contact.htm">Contact</a></li>
             </ul>
             <!-- lines under links -->
             <div id="line_under_link1"></div>
@@ -36,30 +37,35 @@
     </header>   
     
     <!-- Add code here (remove this comment before publishing) -->
-    <div id="hqinfo">
-        <p class="headers">Headquarters</p>
-        <p>
-            American Pizzas <br />
-            2561 6th Street <br />
-            Bremerton, WA 98312
-        </p>
-        <p><a href="#"><img src="site_images/Contacts_facebook_logo_icon.png" alt="facebook" /></a></p>
-        <p class="headers">Email</p>
-        <p>customerservice@americanpizza.com</p>
-        <p class="headers">Phone</p>
-        <p>(360) 832-1158</p>
-    </div>
-    <div id="hqmap">
-        <href><img src="site_images/contacts_hq_map.PNG" alt="HQ Location Map"></href>
-    </div>
-    <div id="cform">
-        <form method="POST" action="thanks.php">
-            <p class="headers">Contact Us</p>
-            <input type="text" id="cname" name="cname" placeholder="Name"><br />
-            <input type="email" id="cmail" name="cmail" required placeholder="Email"><br />
-            <textarea id="comm" name="mess" rows="15" cols="50"></textarea><br />
-            <input type="submit" id="csubmit" value="Send">
-        </form>
+    <div>
+        <div id="hqinfo">
+            <p class="headers">Headquarters</p>
+            <p>
+                American Pizzas <br />
+                2561 6th Street <br />
+                Bremerton, WA 98312
+            </p>
+            <p><a href="#"><img src="site_images/Contacts_facebook_logo_icon.png" alt="facebook" /></a></p>
+            <p class="headers">Email</p>
+            <p>customerservice@americanpizza.com</p>
+            <p class="headers">Phone</p>
+            <p>(360) 832-1158</p>
+        </div>
+        <div id="hqmap">
+            <img src="site_images/contacts_hq_map.PNG" alt="HQ Location Map" usemap="#directions">
+            <map name="directions">
+                <area shape="rect" coords="0,0, 600, 600" href="https://www.google.com/maps/place/2561+6th+St,+Bremerton,+WA+98312/@47.5673705,-122.6541734,17z/data=!4m5!3m4!1s0x5490376d55f12363:0x6f63eb5a400d7a0a!8m2!3d47.5673669!4d-122.6519847" />
+            </map>
+        </div>
+        <div id="cform">
+            <form method="POST" action="thanks.php">
+                <p class="headers">Contact Us</p>
+                <input type="text" id="cname" name="cname" placeholder="Name"><br />
+                <input type="email" id="cmail" name="cmail" required placeholder="Email"><br />
+                <textarea id="comm" name="mess"></textarea><br />
+                <input type="submit" id="csubmit" value="Send">
+            </form>
+        </div>
     </div>
     <footer>
         <ul id="footer">
