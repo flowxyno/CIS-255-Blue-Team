@@ -90,7 +90,6 @@ input[type="submit"]:hover {
 	border-color: #c56a64;
 	background-color: rgba(0, 0, 0, 0.01);
 	cursor: pointer;
-	cursor: url(site_images/i.svg);
 }
 
 .itemSizes div img {
