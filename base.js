@@ -141,7 +141,7 @@ window.onload = function() {
         function navBackground() {
             navHeight += i;
             nav.style.top = navHeight + "px";
-            if (navHeight === 0 || navHeight === -90) {
+            if (navHeight === 0 || navHeight <= -90) {
                 clearInterval(backgroundInterval);
             } 
         }

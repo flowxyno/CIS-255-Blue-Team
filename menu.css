@@ -89,6 +89,8 @@ input[type="submit"]:hover {
 .itemSizes > div:hover {
 	border-color: #c56a64;
 	background-color: rgba(0, 0, 0, 0.01);
+	cursor: pointer;
+	cursor: url(site_images/i.svg);
 }
 
 .itemSizes div img {
@@ -135,15 +137,16 @@ div.quantity div {
 	width: 27%;
 }
 
-div.quantity p {
+div.quantity input {
 	line-height: 40px;
 	margin-top: 0px;
 	text-align: center;
+	outline: none;
 	border-radius: 10px;
-	user-select: none;
+	border: 2px solid transparent;
 	width: 30%;
 	font-size: 1.1em;
-	background-color: rgba(0, 0, 0, 0.1);
+	background-color: rgba(0, 0, 0, 0.2);
 }
 
 div.quantity div:first-of-type img {
