@@ -43,8 +43,6 @@ var menu = {
 // Scripts to build the menu
 var output = "";
 
-output += '<input type="submit" value="Make-An-Order" name="submit">';
-
 // Loop to create the items
 for(var i in menu.items) {	
 
@@ -80,6 +78,9 @@ for(var i in menu.items) {
 		}
 		output += "</div>";
 	}
+
+// Creates the submit button
+output += '<input type="submit" value="Make-An-Order" name="submit">';
 
 // Command to output the menu
 document.getElementById("menu").innerHTML = output;
