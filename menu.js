@@ -80,29 +80,29 @@ for(var i in menu.items) {
 	}
 
 // Creates the submit button
-output += '<input type="submit" value="Make-An-Order" name="submit">';
+output += '<input type="submit" value="Order-Now" name="submit">';
 
 // Command to output the menu
 document.getElementById("menu").innerHTML = output;
 
-// Get all the checkbox inputs 
-var inputs = document.querySelectorAll("input[type='checkbox']");
-// Loop through the checkbox inputs
-for (var i = 0; i < inputs.length; i++) {
-	// Access each checkbox's id attribute.
-	// Call function 'showQuantity()' every time the input value changes.
-	document.forms.menu.elements[inputs[i].getAttribute("id")].onchange = showQuantity;
-}
+// // Get all the checkbox inputs 
+// var inputs = document.querySelectorAll("input[type='checkbox']");
+// // Loop through the checkbox inputs
+// for (var i = 0; i < inputs.length; i++) {
+// 	// Access each checkbox's id attribute.
+// 	// Call function 'showQuantity()' every time the input value changes.
+// 	document.forms.menu.elements[inputs[i].getAttribute("id")].onchange = showQuantity;
+// }
 	
-function showQuantity() {
-	// get the number input by its class name
-	var x = document.getElementsByClassName(this.id);
-	// check if the input has changed
-	if(this.checked == true) {
-		x[0].style.display = "block";
-		x[0].value = 1;
-	} else {
-		x[0].style.display = "none";
-		x[0].value = 0;
-	}
-}
+// function showQuantity() {
+// 	// get the number input by its class name
+// 	var x = document.getElementsByClassName(this.id);
+// 	// check if the input has changed
+// 	if(this.checked == true) {
+// 		x[0].style.display = "block";
+// 		x[0].value = 1;
+// 	} else {
+// 		x[0].style.display = "none";
+// 		x[0].value = 0;
+// 	}
+// }

@@ -1,33 +1,78 @@
+#headImage {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url(site_images/menu_page.jpg);
+	height: 550px;
+}
+
+#headImage h1 {
+	background-color: rgba(255, 255, 255, 0.8);
+	padding: 1%;
+	margin-top: 90px;
+	border-radius: 50px;
+	width: 20pc;
+	box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
+	font-weight: normal;
+	font-size: 2.6em;
+	text-align: center;
+}
+
 main {
 	margin: 0 auto;
 	width: 90%;
 	max-width: 1200px;
 }
-main h2 {
-	font-size: 1.3em;
-	font-weight: none;
+
+main h2:first-of-type {
+	margin-top: 2em;
 }
+
+main h2 {
+	font-size: 1.8em;
+	font-weight: normal;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+main p {
+	margin-top: 10px;
+}
+
 .description {
 	text-align: center;
 	font-style: italic;
 }
 input[type="submit"] {
-	width: 100%;
-	margin: 2em 0;
+	width: 30%;
+	margin: 2em 35% 5em;
 	padding: 1em;
-	font-size: 1.2em;
+	font-size: 1.3em;
 	font-family: Verdana, Tahoma, sans-serif;
-	font-style: italic;
 	border-radius: 2em;
 	border: 1px solid grey;
+	box-shadow: #444444 0px 0px 5px;
 	background-color: white;
+    transition: background-color 0.5s;
 }
+
+input[type="submit"]:hover {
+    background-color: rgb(180, 94, 94);
+    animation: buttonChange 0.5s;
+}
+
+@keyframes buttonChange {
+    0% {background-color: #F5AEAE;}
+    100% {background-color: rgb(180, 94, 94);}
+}
+
 /* Styles the container for all of an item's sizes */
 .itemSizes {
 	display: grid;
 	grid-template: auto / 1fr 1fr 1fr 1fr;
 	margin-bottom: 2em;
 	border-bottom: 1px solid grey;
+	column-gap: 20px;
 }
 /* Styles each individual size of an item */
 .itemSizes div {
@@ -36,11 +81,23 @@ input[type="submit"] {
 	align-items: center;
 	justify-items: center;
 	margin-bottom: 1em;
+	border: 2px solid transparent;
+	border-radius: 10px;
+	padding-top: 25px;
 }
+
+.itemSizes > div:hover {
+	border-color: #c56a64;
+	background-color: rgba(0, 0, 0, 0.01);
+}
+
 .itemSizes div img {
 	align-self: end;
-	margin-bottom: 1.5em;
+	margin-bottom: 1em;
+	border-radius: 100%;
+
 }
+
 .itemSizes div p {
 	margin: .7em 0 0;
 }
@@ -60,16 +117,57 @@ label {
 	background-color: #ac5959;
     color: white;
  }
+
+div.quantity {
+	display: flex;
+	justify-content: space-between;
+	height: 40px;
+	padding: 0px;
+	border-radius: 0px;
+	width: 48%;
+}
+
+div.quantity div {
+	height: 100%;
+	margin: 0px;
+	padding: 0px;
+	border-radius: 0px;
+	width: 27%;
+}
+
+div.quantity p {
+	line-height: 40px;
+	margin-top: 0px;
+	text-align: center;
+	border-radius: 10px;
+	user-select: none;
+	width: 30%;
+	font-size: 1.1em;
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+div.quantity div:first-of-type img {
+	bottom: 208px;
+}
+
+div.quantity img {
+	position: relative;
+	bottom: 200px;
+	width: 27px;
+	border-radius: 0px;
+}
+
 /* The classes that control the image size */
 .Personal {
-	width: 80px;
+	width: 25%;
 }
+
 .Medium {
-	width: 120px;
+	width: 45%;
 }
 .Large {
-	width: 160px;
+	width: 70%;
 }
 .Family {
-	width: 240px;
+	width: 90%;
 }
