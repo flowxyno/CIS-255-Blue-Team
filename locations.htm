@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Locations</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="base.css" rel="stylesheet" />
+    <link href="locations.css" rel="stylesheet"/>
+    <script src="base.js"></script>
+    <script src="locations.js" defer></script>
+    <!-- 
+        CIS 155 Team Project - Spring 2021
+        
+        Site Name: American Pizza
+        Team Name: Developer Dudes
+        Authors: Adam Rodriguez, Tracy Harvey, James Coolidge
+    -->
+</head>
+<!-- remove the inline style!! It just here to show how the page would look. (remove this comment before publishing)-->
+<body>
+    <!-- The navigation menu list. -->
+    <nav id="nav_menu">
+    	<ul>
+            <!-- Move the 'current' class to whichever page this is. It will make that button stand out to show the user which page they're on. (remove this comment before publishing) -->
+            <li><a href="#"><img src="site_images/logo.jpg" alt="American Pizza"/></a></li>
+    		<li><a id="current" href="#">Home</a></li>
+    		<li><a href="#">Menu</a></li>
+            <li><a href="#">Locations</a></li>
+    		<li><a href="#">Contact</a></li>
+    	</ul>
+        <!-- lines under links -->
+        <div id="line_under_link1"></div>
+        <div id="line_under_link2"></div>
+    </nav>
+    <img src="site_images/locations_page.jpg" alt="Locations Page Image">
+    <main>
+        <select name="locations" id="locations" onchange='displayThreeCities()'>
+            <!-- 'locations.js' will write the options here -->
+        </select>
+        <div id="cities">
+            <!-- When the user selects a state, the 'displayThreeCities' function in <select> above will add the three cities and their addresses here. See the function in 'locations.js' -->
+        </div>
+        <div id="map" width="640" height="480">&nbsp;</div>
+    </main>
+    <footer>
+        <ul id="footer">
+    		<li><a href="#">Home</a></li>
+    		<li><a href="#">Menu</a></li>
+            <li><a href="#">Locations</a></li>
+    		<li><a href="#">Contact</a></li>
+            <li><a href="#"><img src="site_images/facebook_icon.svg" alt="facebook" /></a></li>
+    	</ul>
+    </footer>
+    <div id="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>
