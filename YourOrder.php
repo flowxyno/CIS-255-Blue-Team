@@ -25,7 +25,7 @@
             <li><a href="#"><img src="site_images/logo.jpg" alt="American Pizza"/></a></li>
     		<li><a href="home.html">Home</a></li>
     		<li><a id="current" href="menu.htm">Menu</a></li>
-            <li><a href="#">Locations</a></li>
+            <li><a href="locations.htm">Locations</a></li>
     		<li><a href="contact.htm">Contact</a></li>
     	</ul>
         <!-- lines under links -->
@@ -144,7 +144,7 @@
         <ul id="footer">
     		<li><a href="home.html">Home</a></li>
     		<li><a href="menu.htm">Menu</a></li>
-            <li><a href="#">Locations</a></li>
+            <li><a href="locations.htm">Locations</a></li>
     		<li><a href="contact.htm">Contact</a></li>
             <li><a href="#"><img src="site_images/facebook_icon.svg" alt="facebook" /></a></li>
     	</ul>
