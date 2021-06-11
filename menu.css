@@ -84,6 +84,7 @@ input[type="submit"]:hover {
 	border: 2px solid transparent;
 	border-radius: 10px;
 	padding-top: 25px;
+	position: relative;
 }
 
 .itemSizes > div:hover {
@@ -157,6 +158,33 @@ div.quantity img {
 	bottom: 200px;
 	width: 27px;
 	border-radius: 0px;
+}
+
+/* shopping cart symbols */
+
+#cart {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+#add {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.itemSizes > div:hover #add {
+	display: block;
+}
+
+#remove {
+	display: none;
+	position: absolute;
+	top: 10px;
+	right: 10px;
 }
 
 /* The classes that control the image size */
