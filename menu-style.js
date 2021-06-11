@@ -104,6 +104,11 @@ for (var i = 0; i < itemsElements.length; i++) {
                             aString += this.value[i];
                         }
                     }
+                    if (Number(aString) > 10) {
+                        aString = 10;
+                    } else if (Number(aString) < 1) {
+                        aString = 1;
+                    }
                     this.value = aString;
 
                 } else if (Number(this.value) > 10) {
