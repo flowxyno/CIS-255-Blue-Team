@@ -32,8 +32,11 @@
         <div id="line_under_link1"></div>
         <div id="line_under_link2"></div>
     </nav>
+    <div id="headImage">
+        <h1>Your Order</h1> 
+    </div>
 	<main>
-        <h1>Thank you for your order! Here it is.</h1>
+        <h2>Thank you for your order! Here it is.</h2>
         <table>
             <tr>
                 <th>Item</th>
