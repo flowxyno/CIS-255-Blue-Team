@@ -18,6 +18,7 @@
 
 <!-- remove the inline style!! It just here to show how the page would look. (remove this comment before publishing)-->
 <body>
+    <div id="pageHeight">
     <!-- The navigation menu list. -->
     <nav id="nav_menu">
     	<ul>
@@ -117,6 +118,24 @@
             writeRows($_GET['mountVernonMeatFamily'], $_GET['mountVernonMeatFamilyQty'], $addedPrc);
         }
 
+        // Soft Drinks
+        if(isset($_GET['softDrinkSmall'])) {
+            addPrices($_GET['softDrinkSmallPrice'], $_GET['softDrinkSmallQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkSmall'], $_GET['softDrinkSmallQty'], $addedPrc);
+        }
+        if(isset($_GET['softDrinkMedium'])) {
+            addPrices($_GET['softDrinkMediumPrice'], $_GET['softDrinkMediumQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkMedium'], $_GET['softDrinkMediumQty'], $addedPrc);
+        }
+        if(isset($_GET['softDrinkLarge'])) {
+            addPrices($_GET['softDrinkLargePrice'], $_GET['softDrinkLargeQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkLarge'], $_GET['softDrinkLargeQty'], $addedPrc);
+        }
+        if(isset($_GET['softDrinkSuper'])) {
+            addPrices($_GET['softDrinkSuperPrice'], $_GET['softDrinkSuperQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkSuper'], $_GET['softDrinkSuperQty'], $addedPrc);
+        }
+
         // Calculate the amounts
         $subtotal = number_format($subtotal, 2); // Forces the subtotal to have two decimal places
         $tax = $subtotal * 0.086;
@@ -143,6 +162,7 @@
             </tr>
         </table>
     </main>
+    </div>
     <footer>
         <ul id="footer">
     		<li><a href="home.html">Home</a></li>
@@ -157,5 +177,6 @@
         <div></div>
         <div></div>
     </div>
+    
 </body>
 </html>

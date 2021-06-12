@@ -36,6 +36,18 @@ var menu = {
 					{ "size" : "Large", "price" : 15.99 },
 					{ "size" : "Family", "price" : 18.99 }
 				]
+			},
+			{ 
+				"name" : "Soft Drink",
+				"id" : "softDrink",
+				"desc" : "Pepsi, Diet Coke, Sprite, Mountain Dew, Barq's",
+				"imag" : "site_images/soft-drink.jpg",
+				"sizes" : [
+					{ "size" : "Small", "price" : 1.99 },
+					{ "size" : "Medium", "price" : 2.99 },
+					{ "size" : "Large", "price" : 3.99 },
+					{ "size" : "Super", "price" : 4.99 }
+				]
 			}
 	]
 };

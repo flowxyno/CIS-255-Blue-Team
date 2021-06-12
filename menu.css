@@ -193,7 +193,9 @@ div.quantity img {
 .Personal {
 	width: 25%;
 }
-
+.Small {
+	width: 25%;
+}
 .Medium {
 	width: 45%;
 }
@@ -201,5 +203,8 @@ div.quantity img {
 	width: 70%;
 }
 .Family {
+	width: 90%;
+}
+.Super {
 	width: 90%;
 }

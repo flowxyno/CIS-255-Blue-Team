@@ -40,6 +40,9 @@ main {
 	font-size: 2.6em;
 	text-align: center;
 }
+select {
+    outline: none;
+}
 #cities {
     grid-area: adr;
     margin-left: 3em;
