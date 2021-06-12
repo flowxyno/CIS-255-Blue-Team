@@ -15,11 +15,28 @@ main {
     height: 57px;
     padding-left: 2em;
     border-radius: 2em;
+    border: 2px solid #333333;
     font-family: Verdana, Tahoma, sans-serif;
     font-size: 1.05em;
     justify-self: center;
     align-self: top;
+    outline: none;
 }
+
+#locations option:first-of-type {
+    display: none;
+}
+
+body #locations  {
+    min-height: 2em;
+}
+
+#locations:focus {
+    outline: none;
+    border: 2px solid rgb(129, 68, 68);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 3px;
+}
+
 #headImage {
 	display: flex;
 	justify-content: center;
@@ -40,9 +57,7 @@ main {
 	font-size: 2.6em;
 	text-align: center;
 }
-select {
-    outline: none;
-}
+
 #cities {
     grid-area: adr;
     margin-left: 3em;
