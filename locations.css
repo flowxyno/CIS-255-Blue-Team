@@ -9,6 +9,17 @@ main {
         "adr map";
     gap: 2em;
 }
+html, body {
+    height: 100%;
+    margin: 0;
+}
+#pageHeight {
+    min-height: 95%;
+}
+footer {
+    min-height: 5%;
+}
+
 #locations {
     grid-area: sel;
     width: 100%;
