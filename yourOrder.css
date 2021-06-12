@@ -5,6 +5,9 @@ html, body {
 #pageHeight {
     min-height: 95%;
 }
+footer {
+    min-height: 5%;
+}
 main {
     margin: 0 auto;
     width: 90%;
