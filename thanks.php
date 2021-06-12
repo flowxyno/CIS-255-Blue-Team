@@ -53,7 +53,12 @@
                 </div
             </div>
         ";
-
+        
         ?>
+    <div id="loading">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
 </body>
 </html>
