@@ -60,12 +60,6 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: rgb(180, 94, 94);
-    animation: buttonChange 0.5s;
-}
-
-@keyframes buttonChange {
-    0% {background-color: #F5AEAE;}
-    100% {background-color: rgb(180, 94, 94);}
 }
 
 /* Styles the container for all of an item's sizes */

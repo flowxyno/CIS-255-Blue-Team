@@ -109,7 +109,26 @@ img[src$="/s.svg"] {
         width: 900px;
         animation: siteName 1s;
     }
-    
+
+    section:last-of-type > img {
+        top: 6%;
+    }
+
+    @keyframes xmove {
+        0% {top: 6%}
+        33% {top: 4%}
+        67% {top: 8%}
+        100% {top: 6%}
+    }
+
+    body section > section:last-of-type:hover img {
+        animation: xmove 1s;
+    }
+
+    section h2 {
+        top: 2%;
+    }
+
     @keyframes siteName {
         0% {width: 0px;}
         90% {width: 1000px;}
@@ -119,6 +138,22 @@ img[src$="/s.svg"] {
     section {
         margin-right: 2%;
     }
+
+    body section > section div {
+        height: 350px;
+        width: 350px;
+    }
+    
+    body section div > div {
+        width: 230px;
+        height: 230px;
+    }
+    
+    body section div > div > div {
+        width: 110px;
+        height: 110px;
+    }
+    
 }
 
 section > section:last-of-type {
