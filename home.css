@@ -27,21 +27,13 @@ section {
     grid-template: auto / 3fr 1fr;
 }
 
-@media (max-height: 900px) {
-    body > section {
-        height: 750px;
-    }
+body > section {
+    height: 970px;
 }
 
-@media (max-height: 1081px) {
-    body > section {
-        height: 980px;
-    }
-}
-
-@media (max-height: 1400px) {
-    body > section {
-        height: 1200px;
+@media (min-height: 980px) {
+    html body > section {
+        height: 1600px;
     }
 }
 
@@ -59,6 +51,19 @@ section:last-of-type > img {
     position: relative;
     transform: scale(1.4);
     top: 9%;
+}
+
+section > section:first-of-type {
+    position: relative;
+    width: 1100px;
+    margin: 20% auto;
+    animation: siteName 1s;
+}
+
+@media (min-width: 1930px) {
+    body section > section:first-of-type {
+        width: 1200px;
+    }
 }
 
 section > section:first-of-type {
