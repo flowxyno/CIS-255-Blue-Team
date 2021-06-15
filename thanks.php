@@ -15,8 +15,7 @@
         Team Name: Developer Dudes
         Authors: Adam Rodriguez, Tracy Harvey, James Coolidge
     -->
-
-<!-- remove the inline style!! It just here to show how the page would look. (remove this comment before publishing)-->
+</head>
 <body>
     <!-- The navigation menu list. -->
     <nav id="nav_menu">
@@ -36,17 +35,19 @@
        
         <?php
         
+        // Gathering passed in form data into their respective variables
         if(isset($_POST['cname'])) { $cust = $_POST['cname']; } else { $cust = ""; } 
         if(isset($_POST['cmail'])) { $mail = $_POST['cmail']; } else { $mail = ""; }
         if(isset($_POST['mess'])) { $mes = $_POST['mess']; } else { $mes = "";}
             
+        // Construction of the customer feedback receipt
         print "
             <div id='receipt'>
                 <h1>Thank you for your feed back it is very valuable to us.</h1>
                 <div id='inner'>
                     <fieldset>
                         <legend>Synopsis of Customer Feedback: </legend>
-                        <p><b>Customer Name: </b>$cust</p>
+                        <p><b>Customer Name: </b>$cust</p> 
                         <p><b>Customer Email: </b>$mail</p>
                         <p><b>Customer Input: </b><br /> $mes </p>
                     </fieldset>

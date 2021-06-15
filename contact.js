@@ -9,6 +9,7 @@ function directions() {
     aElement.appendChild(directions);
     hqmap.appendChild(aElement);
 
+    // Creation of the + and - controls for zooming in and out for the HQ map
     var plusMinus = document.createElement("img");
     plusMinus.setAttribute("src", "site_images/zoomBar.svg");
 
@@ -18,11 +19,13 @@ function directions() {
     var minus = document.createElement("img");
     minus.setAttribute("src", "site_images/minus.svg");
 
+    // Attachment of the + and - controlls to the map image
     hqmap.appendChild(plus);
     hqmap.appendChild(minus);
     hqmap.appendChild(plusMinus);
 
     var image = document.querySelectorAll("#hqmap img")[0];
+    // Controls the zoom in feature of the + control on the HQ Map
     plus.onclick = function() {
         image.style.animationName = "increaseScale";
         setTimeout(function() {
@@ -31,6 +34,7 @@ function directions() {
         //aElement.style.visibility = "hidden";
     }
 
+    // Controls the zoom out feature of the - control on the HQ Map
     minus.onclick = function() {
         image.style.animationName = "decreaseScale";
         setTimeout(function() {

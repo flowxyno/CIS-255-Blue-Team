@@ -16,13 +16,11 @@
         Authors: Adam Rodriguez, Tracy Harvey, James Coolidge
     -->
 </head>
-<!-- remove the inline style!! It just here to show how the page would look. (remove this comment before publishing)-->
 <body>
     <!-- The navigation menu list. -->
     <header id="head">
         <nav id="nav_menu">
             <ul>
-                <!-- Move the 'current' class to whichever page this is. It will make that button stand out to show the user which page they're on. (remove this comment before publishing) -->
                 <li><a href="#"><img id="logo" src="site_images/logo.jpg" alt="American Pizza"/></a></li>
                 <li><a href="home.html">Home</a></li>
                 <li><a href="menu.htm">Menu</a></li>
@@ -36,8 +34,8 @@
         <div id="title">Contact</div>
     </header>   
     
-    <!-- Add code here (remove this comment before publishing) -->
     <div>
+        <!-- Div seperating out the HQ contact information -->
         <div id="hqinfo">
             <p class="headers">Headquarters</p>
             <p>
@@ -51,12 +49,14 @@
             <p class="headers">Phone</p>
             <p>(360) 832-1158</p>
         </div>
+        <!-- Div containing the map for the business HQ for American Pizzas -->
         <div id="hqmap">
             <img src="site_images/contacts_hq_map.PNG" alt="HQ Location Map" usemap="#directions">
             <map name="directions">
                 <area shape="rect" coords="0,0, 600, 600" href="https://www.google.com/maps/place/2561+6th+St,+Bremerton,+WA+98312/@47.5673705,-122.6541734,17z/data=!4m5!3m4!1s0x5490376d55f12363:0x6f63eb5a400d7a0a!8m2!3d47.5673669!4d-122.6519847" />
             </map>
         </div>
+        <!-- Div containing the customer feed back form -->
         <div id="cform">
             <form method="POST" action="thanks.php">
                 <p class="headers">Contact Us</p>
