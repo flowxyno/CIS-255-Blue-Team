@@ -36,7 +36,7 @@
        
         <?php
         
-        if(isset($_POST['cname'])) { $cust = $_POST['cname']; } else { $cust = ""; }
+        if(isset($_POST['cname'])) { $cust = $_POST['cname']; } else { $cust = ""; } 
         if(isset($_POST['cmail'])) { $mail = $_POST['cmail']; } else { $mail = ""; }
         if(isset($_POST['mess'])) { $mes = $_POST['mess']; } else { $mes = "";}
             
@@ -53,7 +53,7 @@
                 </div
             </div>
         ";
-        
+
         ?>
     <div id="loading">
         <div></div>
