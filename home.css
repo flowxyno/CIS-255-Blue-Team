@@ -57,12 +57,19 @@ section > section:first-of-type {
     position: relative;
     width: 1100px;
     margin: 20% auto;
-    animation: siteName 1s;
+    animation-duration: 1s;
 }
 
 @media (min-width: 1930px) {
     body section > section:first-of-type {
         width: 1200px;
+        animation-duration: 1s;
+    }
+
+    @keyframes siteName {
+        0% {width: 0px;}
+        90% {width: 1390px;}
+        100% {width: 1200px;}
     }
 }
 
@@ -70,7 +77,7 @@ section > section:first-of-type {
     position: relative;
     width: 1100px;
     margin: 20% auto;
-    animation: siteName 1s;
+    animation-duration: 1s;
 }
 
 @keyframes siteName {
@@ -84,6 +91,7 @@ section > section:first-of-type {
     50% {transform: scale(1.5);}
     100% {transform: scale(1);}
 }
+
 
 section:first-of-type > img {
     filter: drop-shadow(#242424 0px 0px 3px);
@@ -106,7 +114,8 @@ section:first-of-type >  img:nth-last-of-type(2) {top: 40px; left: 84.5%;}
 section:first-of-type > img:nth-last-of-type(1) {top: 40px; left: 91%;}
 
 img[src$="/s.svg"] {
-    animation: sLetter 1s 1s;
+    animation-duration: 1s;
+    animation-delay: 1s;
 }
 
 @media  screen and (max-width: 1600px) {

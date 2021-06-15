@@ -19,11 +19,22 @@
     move()
         Moves the position of the red line under links left or right by small perscentage.
         This function is called until the red line is under the link the mouse is over. 
+
+    changeNav(hide)
+        Hides the nav bar up and shows the nav bar when the page is scrolled.
+        param: "hide" if hide is string "pos" then the nav bar is hidden. Any of
+        string will make the nav bar show.  
+
+    checkHeight()
+        This function checks to see if the page has been scrolled more the 200px 
+        from the top and is currently displayed.
 */
 
 window.onload = function() {
     // remove loading page element
     document.getElementById("loading").style.display = "none";
+    // body animation when it loads
+    document.body.style.animationName = "load";
     // get all the a tags in nav bar
     var nav_menu = document.querySelectorAll("#nav_menu ul li a");
     // get the nav bar
@@ -110,41 +121,72 @@ window.onload = function() {
         // run interval every millisecond 
         moveLine = setInterval(move, 1);
     }
-
+    
+    // style navigation bar
     nav.style.position = "fixed";
     nav.style.top = "0px";
     nav.style.left = "0px";
     nav.style.width = "100%";
-    var thisColor = true;
-    document.onscroll = function() {
+
+    // variable is true if navigation bar is in view
+    var here = true;
+    
+    // check if nar bar should be hidden
+    checkHeight();
+
+    // when page is scrolled
+    document.onscroll = checkHeight;
+    function checkHeight() {
+        // get how far the page has scrolled from the top in pixels
         var scrollHeight = window.pageYOffset;
-        if (scrollHeight >= 200 && thisColor) {
-            changeBackground("neg"); 
-            thisColor = false;
-        } else if (scrollHeight <= 200 && !(thisColor)) {
-            changeBackground("pos");
-            thisColor = true;
+        // if the page is scrolled more than 200 px from the top and nav bar it is not hidden
+        if (scrollHeight >= 200 && here) {
+            // call function to hide nav bar
+            changeNav("neg"); 
+            // set "here" to false to indicate that nav bar is hidden 
+            here = false;
+        // if the page is scrolled less than 200 px from the top and nav bar it is  hidden
+        } else if (scrollHeight < 200 && !(here)) {
+            // call function to show nav bar
+            changeNav("pos");
+            // set "here" to true to indicate that nav bar is shown
+            here = true;
         }
     }
 
+    // interval to hide and show nav bar
     var backgroundInterval;
-    function changeBackground(fade) {
+    // hide or show nav bar
+    function changeNav(hide) {
+        // the Interval if it is currently running
         clearInterval(backgroundInterval);
-        if (fade === "neg") {
+        // is nav bar to be hidden
+        if (hide === "neg") {
+            // height from top of page
             var navHeight = 0;
+            // how many pixals to move each time the Interal is call the function
             var i = -2;
         } else {
+            // height from top of page
             var navHeight = -90;
+            // how many pixals to move each time the Interal is call the function
             var i = 2;
         }
         
+        // call by Interval untill nar bar is 
+        // fully hidden or fully shown
         function navBackground() {
+            // height from top of page
             navHeight += i;
             nav.style.top = navHeight + "px";
+            // if nav bar is either fully hidden or
+            // fully shown
             if (navHeight === 0 || navHeight <= -90) {
+                // stop Interval
                 clearInterval(backgroundInterval);
             } 
         }
+        // call funtion to show or hide nav bar every millisecond
         backgroundInterval = setInterval(navBackground, 1);
     }
 }

@@ -4,9 +4,9 @@
     <title>American Pizzas - Contact Request Receipt</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <link href="base.css" rel="stylesheet" />
     <link href="contact.css" rel="stylesheet" />
+    <link href="site_images/Icon1Test.ico" rel="icon" type="image/ico" />
     <script src="base.js"></script>
     <!-- 
         CIS 155 Team Project - Spring 2021

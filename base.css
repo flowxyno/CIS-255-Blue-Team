@@ -20,15 +20,14 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "SF Pro Text", "SF Pro Icons", "Segoe UI", Verdana, Tahoma, sans-serif;
-	animation: load 1s;
+	animation-duration: 1s;
 }
 
 /* The styles for the operation of the navigation menu */
 #nav_menu {
-	position: relative; 
 	box-shadow: #333333 0px 0px 4px;
 	height: 90px;
-	z-index: 3;
+	z-index: 1;
 }
 
 #nav_menu ul {
@@ -210,33 +209,36 @@ footer {
 #loading div:first-of-type {
 	animation: firstDiv 2s infinite;
 	background-color: rgba(210, 30, 30, 0.8);
+	transform: scale(0.5)
 }
 
 #loading div:nth-of-type(2) {
 	animation: secondDiv 2s 0.5s infinite;
 	background-color: rgba(172, 27, 27, 0.8);
+	transform: scale(0.5)
 }
 
 #loading div:last-of-type {
 	animation: thirdDiv 2s 1s infinite;
 	background-color: rgba(110, 17, 17, 0.8);
+	transform: scale(0.5)
 }
 
 /* animations for each circle */
 @keyframes  firstDiv {
-	0% {transform: scale(1);}
-	50% {transform: scale(1.2);}
-	100% {transform: scale(1);}
+	0% {transform: scale(0.5);}
+	50% {transform: scale(1);}
+	100% {transform: scale(0.5);}
 }
 
 @keyframes  secondDiv {
-	0% {transform: scale(1);}
-	50% {transform: scale(1.2);}
-	100% {transform: scale(1);}
+	0% {transform: scale(0.5);}
+	50% {transform: scale(1);}
+	100% {transform: scale(0.5);}
 }
 
 @keyframes  thirdDiv {
-	0% {transform: scale(1);}
-	50% {transform: scale(1.2);}
-	100% {transform: scale(1);}
+	0% {transform: scale(0.5);}
+	50% {transform: scale(1);}
+	100% {transform: scale(0.5);}
 }

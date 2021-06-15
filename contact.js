@@ -1,4 +1,17 @@
 "use strict";
+/*
+	CIS 155 Team Project - Spring 2021
+	
+	Site Name: American Pizza
+	Team Name: Developer Dudes
+	Authors: Adam Rodriguez, Tracy Harvey, James Coolidge
+
+	This file contains JS animations for the contact page
+
+    direction()
+        This function was created to keep all variables in local scope
+*/
+
 directions();
 function directions() {
     var hqmap = document.getElementById("hqmap");

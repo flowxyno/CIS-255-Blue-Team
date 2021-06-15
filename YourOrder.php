@@ -7,6 +7,7 @@
 
     <link href="base.css" rel="stylesheet" />
     <link href="yourOrder.css" rel="stylesheet" />
+    <link href="site_images/Icon1Test.ico" rel="icon" type="image/ico" />
     <script src="base.js"></script>
     <!-- 
         CIS 155 Team Project - Spring 2021
