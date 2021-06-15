@@ -8,6 +8,7 @@
 	This file contains styles for the home page
 */
 
+/* reset page */
 html, body, div, section, h1, img, h1, h2, h3, p, span,
 ul, li, nav, footer {
     margin: 0px;
@@ -15,6 +16,7 @@ ul, li, nav, footer {
     box-sizing: border-box;
 }
 
+/* body */
 body {
     background-image: url(site_images/home_page.jpg);
     background-position: center;
@@ -22,21 +24,26 @@ body {
     background-size: cover;
 }
 
+/* main page content */
 section {
     display: grid;
     grid-template: auto / 3fr 1fr;
 }
 
+/* main content height */
 body > section {
-    height: 970px;
+    height: 985px;
 }
 
-@media (min-height: 980px) {
+/* when screen is taller then 980px */
+@media (min-height: 990px) {
+    /* main content height */
     html body > section {
         height: 1600px;
     }
 }
 
+/* "make-an-order" heading */
 section h2 {
     position: relative;
     top: 4%;
@@ -47,6 +54,7 @@ section h2 {
     text-shadow: rgba(0, 0, 0, 0.2) 0px 0px 5px;
 }
 
+/* double down arrow below "make-an-order" heading */
 section:last-of-type > img {
     position: relative;
     transform: scale(1.4);
