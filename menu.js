@@ -40,13 +40,13 @@ var menu = {
 			{ 
 				"name" : "Soft Drink",
 				"id" : "softDrink",
-				"desc" : "Pepsi, Diet Coke, Sprite, Mountain Dew, Barq's",
+				"desc" : "Refreshing and Cool",
 				"imag" : "site_images/soft-drink.jpg",
 				"sizes" : [
-					{ "size" : "Small", "price" : 1.99 },
-					{ "size" : "Medium", "price" : 2.99 },
-					{ "size" : "Large", "price" : 3.99 },
-					{ "size" : "Super", "price" : 4.99 }
+					{ "size" : "Coke", "price" : 1.99 },
+					{ "size" : "Fanta", "price" : 1.99 },
+					{ "size" : "Sprite", "price" : 1.99 },
+					{ "size" : "LaCroix", "price" : 1.99 }
 				]
 			}
 	]

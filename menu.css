@@ -202,3 +202,18 @@ div.quantity img {
 .Super {
 	width: 90%;
 }
+img[src="site_images/soft-drink.jpg"] {
+	width: 70%;
+}
+
+div:last-of-type  div:nth-of-type(2) img[src="site_images/soft-drink.jpg"] {
+	filter: saturate(2);
+}
+
+div:last-of-type  div:nth-of-type(3) img[src="site_images/soft-drink.jpg"] {
+	filter: sepia(0.5) contrast(1.2);
+}
+
+div:last-of-type  div:last-of-type img[src="site_images/soft-drink.jpg"] {
+	filter: grayscale(2) saturate(1);
+}
