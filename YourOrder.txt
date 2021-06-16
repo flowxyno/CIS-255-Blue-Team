@@ -119,22 +119,22 @@
             writeRows($_GET['mountVernonMeatFamily'], $_GET['mountVernonMeatFamilyQty'], $addedPrc);
         }
 
-        // Soft Drinks
-        if(isset($_GET['softDrinkSmall'])) {
-            addPrices($_GET['softDrinkSmallPrice'], $_GET['softDrinkSmallQty'], $subtotal, $addedPrc);
-            writeRows($_GET['softDrinkSmall'], $_GET['softDrinkSmallQty'], $addedPrc);
+        // Drinks
+        if(isset($_GET['softDrinkCoke'])) {
+            addPrices($_GET['softDrinkCokePrice'], $_GET['softDrinkCokeQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkCoke'], $_GET['softDrinkCokeQty'], $addedPrc);
         }
-        if(isset($_GET['softDrinkMedium'])) {
-            addPrices($_GET['softDrinkMediumPrice'], $_GET['softDrinkMediumQty'], $subtotal, $addedPrc);
-            writeRows($_GET['softDrinkMedium'], $_GET['softDrinkMediumQty'], $addedPrc);
+        if(isset($_GET['softDrinkFanta'])) {
+            addPrices($_GET['softDrinkFantaPrice'], $_GET['softDrinkFantaQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkFanta'], $_GET['softDrinkFantaQty'], $addedPrc);
         }
-        if(isset($_GET['softDrinkLarge'])) {
-            addPrices($_GET['softDrinkLargePrice'], $_GET['softDrinkLargeQty'], $subtotal, $addedPrc);
-            writeRows($_GET['softDrinkLarge'], $_GET['softDrinkLargeQty'], $addedPrc);
+        if(isset($_GET['softDrinkSprite'])) {
+            addPrices($_GET['softDrinkSpritePrice'], $_GET['softDrinkSpriteQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkSprite'], $_GET['softDrinkSpriteQty'], $addedPrc);
         }
-        if(isset($_GET['softDrinkSuper'])) {
-            addPrices($_GET['softDrinkSuperPrice'], $_GET['softDrinkSuperQty'], $subtotal, $addedPrc);
-            writeRows($_GET['softDrinkSuper'], $_GET['softDrinkSuperQty'], $addedPrc);
+        if(isset($_GET['softDrinkLaCroix'])) {
+            addPrices($_GET['softDrinkLaCroixPrice'], $_GET['softDrinkLaCroixQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkLaCroix'], $_GET['softDrinkLaCroixQty'], $addedPrc);
         }
 
         // Calculate the amounts
