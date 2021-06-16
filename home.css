@@ -61,19 +61,14 @@ section:last-of-type > img {
     top: 9%;
 }
 
-section > section:first-of-type {
-    position: relative;
-    width: 1100px;
-    margin: 20% auto;
-    animation-duration: 1s;
-}
-
+/* change the section the holds svg images*/
 @media (min-width: 1930px) {
     body section > section:first-of-type {
         width: 1200px;
         animation-duration: 1s;
     }
 
+    /* animation for svg images the spell site name*/
     @keyframes siteName {
         0% {width: 0px;}
         90% {width: 1390px;}
@@ -81,6 +76,7 @@ section > section:first-of-type {
     }
 }
 
+/* section the holds svg images */
 section > section:first-of-type {
     position: relative;
     width: 1100px;
@@ -88,19 +84,21 @@ section > section:first-of-type {
     animation-duration: 1s;
 }
 
+/* animation for svg images*/
 @keyframes siteName {
     0% {width: 0px;}
     90% {width: 1200px;}
     100% {width: 1100px;}
 }
 
+/* animation for letter "s" svg */
 @keyframes sLetter {
     0% {transform: scale(1);}
     50% {transform: scale(1.5);}
     100% {transform: scale(1);}
 }
 
-
+/* styles for all the svg letter images  */
 section:first-of-type > img {
     filter: drop-shadow(#242424 0px 0px 3px);
     position: absolute;
@@ -121,17 +119,20 @@ section:first-of-type >  img:nth-last-of-type(3) {top: 40px; left: 78%;}
 section:first-of-type >  img:nth-last-of-type(2) {top: 40px; left: 84.5%;}
 section:first-of-type > img:nth-last-of-type(1) {top: 40px; left: 91%;}
 
+/* letter "s" svg */
 img[src$="/s.svg"] {
     animation-duration: 1s;
     animation-delay: 1s;
 }
 
+/* when screen less than 1600px */
 @media  screen and (max-width: 1600px) {
     section > section:first-of-type {
         width: 900px;
-        animation: siteName 1s;
+        animation-duration: 1s;
     }
 
+    /* double down arrow */
     section:last-of-type > img {
         top: 6%;
     }
@@ -147,6 +148,7 @@ img[src$="/s.svg"] {
         animation: xmove 1s;
     }
 
+    /* "make-an-order" heading*/
     section h2 {
         top: 2%;
     }
@@ -157,20 +159,24 @@ img[src$="/s.svg"] {
         100% {width: 900px;}
     }
 
+    /* main content */
     section {
-        margin-right: 2%;
+        margin-right: 1%;
     }
 
+    /* red circle 1*/
     body section > section div {
         height: 350px;
         width: 350px;
     }
     
+    /* red cirlce 2 (inside circle 1)*/
     body section div > div {
         width: 230px;
         height: 230px;
     }
     
+    /* red circle 3 */
     body section div > div > div {
         width: 110px;
         height: 110px;
@@ -178,6 +184,7 @@ img[src$="/s.svg"] {
     
 }
 
+/* section the holds red circles */
 section > section:last-of-type {
     display: flex;
     margin-top: 55%;
@@ -185,6 +192,7 @@ section > section:last-of-type {
     align-items: center;
 }
 
+/* double drop down arrow */
 section > section:last-of-type:hover img {
     animation: move 1s;
 }
@@ -196,6 +204,7 @@ section > section:last-of-type:hover img {
     100% {top: 9%}
 }
 
+/* red circle 1 */
 section > section div {
     display: flex;
     align-items: center;
@@ -207,17 +216,20 @@ section > section div {
     border: 1px solid transparent;
 }
 
+/* red circle 2 (inside circle 1)*/
 section div > div {
     width: 280px;
     height: 280px;
 }
 
+/* red circle 3 */
 section div > div > div {
     position: relative;
     width: 160px;
     height: 160px;
 }
 
+/* plus symbol in red circle */
 section div > div > div > div {
     position: relative;
     left: 15%;
@@ -241,8 +253,4 @@ section > section div:hover {
 
 section div > div > div:hover div {
     background-color: #ffffff;
-}
-
-section div > div > div:focus {
-    border-width: 3px;
 }
