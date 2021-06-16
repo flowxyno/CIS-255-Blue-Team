@@ -132,9 +132,9 @@
             addPrices($_GET['softDrinkSpritePrice'], $_GET['softDrinkSpriteQty'], $subtotal, $addedPrc);
             writeRows($_GET['softDrinkSprite'], $_GET['softDrinkSpriteQty'], $addedPrc);
         }
-        if(isset($_GET['softDrinkLaCriox'])) {
-            addPrices($_GET['softDrinkLaCrioxPrice'], $_GET['softDrinkLaCrioxQty'], $subtotal, $addedPrc);
-            writeRows($_GET['softDrinkLaCriox'], $_GET['softDrinkLaCrioxQty'], $addedPrc);
+        if(isset($_GET['softDrinkLaCroix'])) {
+            addPrices($_GET['softDrinkLaCroixPrice'], $_GET['softDrinkLaCroixQty'], $subtotal, $addedPrc);
+            writeRows($_GET['softDrinkLaCroix'], $_GET['softDrinkLaCroixQty'], $addedPrc);
         }
 
         // Calculate the amounts
