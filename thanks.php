@@ -18,18 +18,20 @@
 </head>
 <body>
     <!-- The navigation menu list. -->
-    <nav id="nav_menu">
-    	<ul>
-            <li><a href="home.html"><img src="site_images/logo.jpg" alt="American Pizza"/></a></li>
-    		<li><a href="home.html">Home</a></li>
-    		<li><a href="menu.htm">Menu</a></li>
-            <li><a href="locations.htm">Locations</a></li>
-    		<li><a href="contact.htm">Contact</a></li>
-    	</ul>
-        <!-- lines under links -->
-        <div id="line_under_link1"></div>
-        <div id="line_under_link2"></div>
-    </nav>
+    <header id="head">
+        <nav id="nav_menu">
+    	    <ul>
+                <li><a href="home.html"><img src="site_images/logo.jpg" alt="American Pizza"/></a></li>
+    		    <li><a href="home.html">Home</a></li>
+    		    <li><a href="menu.htm">Menu</a></li>
+                <li><a href="locations.htm">Locations</a></li>
+    		    <li><a id="current" href="contact.htm">Contact</a></li>
+    	    </ul>
+            <!-- lines under links -->
+            <div id="line_under_link1"></div>
+            <div id="line_under_link2"></div>
+        </nav>
+    </header>
 	<main>
        
         <?php
