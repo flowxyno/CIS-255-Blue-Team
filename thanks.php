@@ -20,7 +20,6 @@
     <!-- The navigation menu list. -->
     <nav id="nav_menu">
     	<ul>
-            <!-- Move the 'current' class to whichever page this is. It will make that button stand out to show the user which page they're on. (remove this comment before publishing) -->
             <li><a href="home.html"><img src="site_images/logo.jpg" alt="American Pizza"/></a></li>
     		<li><a href="home.html">Home</a></li>
     		<li><a href="menu.htm">Menu</a></li>
